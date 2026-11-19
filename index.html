@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تراث | فخار وجلابيات مصرية أصيلة</title>
+<meta name="description" content="فخار مصري ويدوي وجلابيات مصرية أصيلة. اطلب بسهولة عن طريق واتساب والدفع عند الاستلام.">
+<meta property="og:title" content="تراث | فخار وجلابيات مصرية أصيلة">
+<meta property="og:description" content="فخار مصري ويدوي وجلابيات مصرية أصيلة. اطلب بسهولة عن طريق واتساب.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--terra:#b5532f;--terra2:#8f3f21;--sand:#f7efe0;--sand2:#efe2c9;--ink:#2a1d14;--mut:#7a6a5c;--teal:#1f5b66;--gold:#c9972b;--card:#fff;--bd:#e7d9bf;--ok:#1a7f4b;--bad:#c0392b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo','Segoe UI',Tahoma,system-ui,sans-serif;background:var(--sand);color:var(--ink);line-height:1.7}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+input,select,textarea{font:inherit;width:100%;padding:11px 12px;border:1px solid var(--bd);border-radius:10px;background:#fff;color:var(--ink)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(247,239,224,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:62px}
+.brand{font-weight:800;font-size:22px;color:var(--terra);text-decoration:none;display:flex;align-items:center;gap:8px}
+.brand i{width:30px;height:30px;border-radius:8px;background:var(--terra);display:inline-block;position:relative}
+.brand i::after{content:'';position:absolute;inset:7px;border:2px solid var(--sand);transform:rotate(45deg)}
+.top nav{margin-inline-start:auto;display:flex;gap:18px;font-weight:600}
+.top nav a{color:var(--ink);text-decoration:none}
+.cartbtn{position:relative;background:var(--terra);color:#fff;border-radius:24px;padding:8px 16px;font-weight:600}
+.cartbtn b{background:var(--gold);color:#2a1d14;border-radius:12px;padding:0 8px;margin-inline-start:6px;font-size:13px}
+@media(max-width:680px){.top nav{display:none}.cartbtn{margin-inline-start:auto}}
+/* hero */
+.hero{background:linear-gradient(135deg,var(--teal),#143f48);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;opacity:.12;background:
+ repeating-linear-gradient(45deg,transparent 0 22px,#fff 22px 23px),repeating-linear-gradient(-45deg,transparent 0 22px,#fff 22px 23px)}
+.hero .wrap{position:relative;padding:54px 16px 58px;display:grid;gap:14px;max-width:720px}
+.hero h1{font-size:clamp(28px,6vw,46px);line-height:1.25;font-weight:800}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{font-size:17px;opacity:.92}
+.cta{display:inline-block;margin-top:6px;background:var(--gold);color:#2a1d14;padding:12px 26px;border-radius:30px;font-weight:800;text-decoration:none;width:max-content}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.badges span{background:rgba(255,255,255,.14);border-radius:20px;padding:4px 14px;font-size:14px}
+/* shop */
+section{padding:34px 0}
+h2{font-size:26px;font-weight:800;margin-bottom:6px}
+.sub{color:var(--mut);margin-bottom:16px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tab{padding:7px 18px;border-radius:22px;border:1px solid var(--bd);background:#fff;font-weight:600}
+.tab.on{background:var(--terra);color:#fff;border-color:var(--terra)}
+.search{max-width:260px;margin-inline-start:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+.card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 2px 10px rgba(80,50,20,.08);display:flex;flex-direction:column;cursor:pointer;transition:transform .15s}
+.card:hover{transform:translateY(-3px)}
+.pic{aspect-ratio:1/1;background:var(--sand2);position:relative;overflow:hidden}
+.pic img,.pic svg{width:100%;height:100%;object-fit:cover}
+.tag{position:absolute;top:10px;inset-inline-start:10px;background:var(--terra);color:#fff;border-radius:14px;padding:0 10px;font-size:12px;font-weight:600}
+.tag.out{background:#555}
+.info{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.info h3{font-size:16px;font-weight:600;line-height:1.4}
+.cat{color:var(--mut);font-size:13px}
+.price{font-weight:800;color:var(--terra);font-size:18px}
+.price s{color:var(--mut);font-weight:400;font-size:13px;margin-inline-start:6px}
+.add{margin-top:auto;background:var(--teal);color:#fff;border-radius:10px;padding:8px;font-weight:600}
+.add:disabled{background:#aaa}
+.empty{padding:40px;text-align:center;color:var(--mut)}
+/* sections */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.step{background:#fff;border-radius:14px;padding:16px;border:1px solid var(--bd)}
+.step b{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--terra);color:#fff;align-items:center;justify-content:center;margin-bottom:8px}
+.box{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:18px}
+.box ul{padding-inline-start:20px}
+footer{background:#2a1d14;color:#e9dcc6;padding:30px 0;text-align:center}
+footer a{color:var(--gold);text-decoration:none;margin:0 8px}
+/* drawer & modal */
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:40;display:none}
+.ov.show{display:block}
+.drawer{position:fixed;top:0;bottom:0;inset-inline-start:0;width:min(440px,100%);background:var(--sand);z-index:50;transform:translateX(-105%);transition:transform .25s;display:flex;flex-direction:column;box-shadow:0 0 30px rgba(0,0,0,.3)}
+html[dir=rtl] .drawer{inset-inline-start:auto;inset-inline-end:0;left:0;right:auto}
+.drawer.show{transform:none}
+.dh{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--bd);background:#fff}
+.db{overflow:auto;padding:14px 16px;flex:1}
+.item{display:grid;grid-template-columns:56px 1fr auto;gap:10px;align-items:center;background:#fff;border-radius:12px;padding:8px;margin-bottom:10px}
+.item .pic{aspect-ratio:1/1;border-radius:8px}
+.qty{display:flex;align-items:center;gap:8px;margin-top:4px}
+.qty button{width:26px;height:26px;border-radius:50%;background:var(--sand2);font-weight:800}
+.rm{color:var(--bad);font-size:13px}
+.sum{background:#fff;border-radius:12px;padding:12px;margin:12px 0}
+.sum div{display:flex;justify-content:space-between;padding:2px 0}
+.sum .t{font-weight:800;font-size:18px;border-top:1px dashed var(--bd);margin-top:6px;padding-top:6px}
+.form{display:grid;gap:8px}
+.wa{background:#1f9d55;color:#fff;border-radius:12px;padding:13px;font-weight:800;width:100%;font-size:17px}
+.note{font-size:13px;color:var(--mut)}
+.err{color:var(--bad);font-size:14px;min-height:20px}
+.modal{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:14px;background:rgba(0,0,0,.55)}
+.modal.show{display:flex}
+.mbox{background:#fff;border-radius:18px;max-width:760px;width:100%;max-height:92vh;overflow:auto;display:grid;grid-template-columns:1fr 1fr}
+@media(max-width:680px){.mbox{grid-template-columns:1fr}}
+.mbox .pic{aspect-ratio:1/1;border-radius:0}
+.mb{padding:18px;display:flex;flex-direction:column;gap:10px}
+.sizes{display:flex;gap:8px;flex-wrap:wrap}
+.sz{padding:6px 16px;border:1px solid var(--bd);border-radius:10px;background:#fff;font-weight:600}
+.sz.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#2a1d14;color:#fff;padding:10px 20px;border-radius:24px;z-index:80;opacity:0;pointer-events:none;transition:opacity .25s}
+.toast.show{opacity:1}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top"><i></i><span id="brandName">تراث</span></a>
+  <nav><a href="#shop">المنتجات</a><a href="#how">إزاي أطلب</a><a href="#about">عنّا</a><a href="#policy">الشحن والاستبدال</a></nav>
+  <button class="cartbtn" id="cartBtn" aria-label="السلة">🛒 السلة<b id="cartCount">0</b></button>
+</div></header>
+
+<div class="hero" id="top"><div class="wrap">
+  <h1>تراث مصري <em>أصيل</em> في بيتك</h1>
+  <p id="tagline">فخار مصري صُنع باليد، وجلابيات مصرية بخامات ممتازة.</p>
+  <div class="badges"><span>🏺 صناعة يدوية</span><span>💵 الدفع عند الاستلام</span><span>📦 توصيل لكل المحافظات</span></div>
+  <a class="cta" href="#shop">تسوّق دلوقتي</a>
+</div></div>
+
+<section id="shop"><div class="wrap">
+  <h2>المنتجات</h2><div class="sub">اختار اللي يعجبك وأضفه للسلة، وبعدين ابعت الطلب على واتساب.</div>
+  <div class="tools"><div class="tabs" id="tabs"></div><input class="search" id="q" placeholder="🔎 ابحث عن منتج"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="how" style="background:var(--sand2)"><div class="wrap">
+  <h2>إزاي أطلب؟</h2>
+  <div class="steps">
+    <div class="step"><b>1</b><div>اختار المنتجات والمقاس وضيفها للسلة.</div></div>
+    <div class="step"><b>2</b><div>اكتب اسمك وعنوانك واضغط "اطلب عن طريق واتساب".</div></div>
+    <div class="step"><b>3</b><div>هنأكد معاك الطلب والشحن على واتساب، وتدفع عند الاستلام.</div></div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <h2>عنّا</h2>
+  <div class="box" id="aboutText">بنقدم لك منتجات مصرية أصيلة من الفخار اليدوي والجلابيات، بنختارها بعناية من صنّاع مصريين، وبنهتم بالتغليف والتوصيل عشان توصلك سليمة.</div>
+</div></section>
+
+<section id="policy" style="padding-top:0"><div class="wrap">
+  <h2>الشحن والاستبدال</h2>
+  <div class="box"><ul id="policyList"></ul></div>
+</div></section>
+
+<footer><div class="wrap">
+  <div style="font-weight:800;font-size:18px" id="footName">تراث</div>
+  <div style="margin:8px 0" id="links"></div>
+  <div class="note" style="color:#bfae95">جميع الحقوق محفوظة</div>
+</div></footer>
+
+<div class="ov" id="ov"></div>
+<aside class="drawer" id="drawer" aria-label="سلة المشتريات">
+  <div class="dh"><b>🛒 سلة المشتريات</b><button id="closeCart" aria-label="إغلاق">✕</button></div>
+  <div class="db" id="cartBody"></div>
+</aside>
+<div class="modal" id="modal"><div class="mbox" id="mbox"></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============ إعدادات المتجر (عدّل هنا) ============ */
+const CONFIG = {
+  STORE_NAME: 'تراث',
+  TAGLINE: 'فخار مصري صُنع باليد، وجلابيات مصرية بخامات ممتازة.',
+  WHATSAPP: '01000000000',            // رقم واتساب الطلبات (اكتب رقمك)
+  SHEET_CSV_URL: '',                  // رابط الشيت المنشور CSV (سيبه فاضي = منتجات تجريبية)
+  CURRENCY: 'ج.م',
+  SHIPPING_FEE: 60,                   // سعر الشحن الثابت (0 = هتأكد عليه على واتساب)
+  FREE_SHIPPING_OVER: 1500,           // الشحن مجاني لو الطلب أكبر من المبلغ ده (0 = مفيش)
+  SHIPPING_BY_GOV: {},                // اختياري: {"القاهرة":50,"الإسكندرية":70}
+  PAYMENTS: ['الدفع عند الاستلام', 'إنستاباي', 'محفظة موبايل (فودافون كاش…)'],
+  ABOUT: '',                          // سيبه فاضي لاستخدام النص الافتراضي
+  POLICY: [
+    'الشحن لكل المحافظات، ومدة التوصيل من 2 إلى 5 أيام عمل.',
+    'الفخار بيتغلف بعناية. لو وصل مكسور، صوّر الشحنة وقت الاستلام وابعتلنا وهنبدّله.',
+    'ممكن الاستبدال في خلال 3 أيام من الاستلام لو المنتج مفتوحش ولم يُستخدم.',
+    'ألوان المنتجات ممكن تختلف بشكل بسيط عن الصور حسب الشاشة.'],
+  INSTAGRAM: '', FACEBOOK: ''         // روابط حساباتك (اختياري)
+};
+const SAMPLE = [
+ {id:'p1',name:'إناء فخار مزخرف',category:'فخار',price:350,old:420,sizes:[],desc:'إناء فخار يدوي بنقوش تقليدية، مناسب للديكور والزرع.',image:'',available:true},
+ {id:'p2',name:'طقم أكواب فخار (6 قطع)',category:'فخار',price:420,old:0,sizes:[],desc:'طقم أكواب فخار يدوي، آمن للاستخدام اليومي.',image:'',available:true},
+ {id:'p3',name:'طبق تقديم فخار كبير',category:'فخار',price:280,old:0,sizes:[],desc:'طبق تقديم فخار بحواف مزخرفة للضيافة.',image:'',available:true},
+ {id:'p4',name:'فازة فخار صعيدي',category:'فخار',price:500,old:0,sizes:['صغير','وسط','كبير'],desc:'فازة بتصميم صعيدي أصيل بألوان ترابية.',image:'',available:true},
+ {id:'p5',name:'جلابية رجالي قطن مصري',category:'جلابيات رجالي',price:650,old:750,sizes:['M','L','XL','XXL'],desc:'جلابية رجالي من القطن المصري المريح، تفصيل كلاسيكي.',image:'',available:true},
+ {id:'p6',name:'جلابية حريمي مطرزة',category:'جلابيات حريمي',price:900,old:0,sizes:['S','M','L','XL'],desc:'جلابية حريمي بتطريز يدوي على الصدر والأكمام.',image:'',available:true},
+ {id:'p7',name:'جلابية أطفال',category:'جلابيات أطفال',price:400,old:0,sizes:['2-4 سنين','5-7 سنين','8-10 سنين'],desc:'جلابية أطفال قطن ناعم لعيد أو مناسبة.',image:'',available:true},
+ {id:'p8',name:'جلابية رجالي كتان صيفي',category:'جلابيات رجالي',price:720,old:0,sizes:['M','L','XL'],desc:'جلابية كتان خفيفة للصيف.',image:'',available:false}
+];
+const GOVS=['القاهرة','الجيزة','الإسكندرية','القليوبية','الشرقية','الدقهلية','الغربية','المنوفية','البحيرة','كفر الشيخ','دمياط','بورسعيد','الإسماعيلية','السويس','الفيوم','بني سويف','المنيا','أسيوط','سوهاج','قنا','الأقصر','أسوان','البحر الأحمر','الوادي الجديد','مطروح','شمال سيناء','جنوب سيناء'];
+
+/* ============ أدوات ============ */
+const $=id=>document.getElementById(id);
+const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+const fmt=n=>(Math.round(n*100)/100).toLocaleString('en-US')+' '+CONFIG.CURRENCY;
+function toast(m){const t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove('show'),1800)}
+function parseCsv(t){const rows=[];let row=[],cur='',q=false;t=t.replace(/^\ufeff/,'');
+  for(let i=0;i<t.length;i++){const ch=t[i];
+    if(q){if(ch==='"'){if(t[i+1]==='"'){cur+='"';i++}else q=false}else cur+=ch}
+    else if(ch==='"')q=true;else if(ch===','){row.push(cur);cur=''}
+    else if(ch==='\n'){row.push(cur);rows.push(row);row=[];cur=''}else if(ch!=='\r')cur+=ch}
+  if(cur!==''||row.length){row.push(cur);rows.push(row)}return rows}
+function toProducts(rows){const h=rows[0].map(x=>x.trim().toLowerCase()),ix=k=>h.indexOf(k);
+  return rows.slice(1).filter(r=>r.some(c=>String(c).trim()!=='')).map((r,i)=>{const g=k=>ix(k)>=0?String(r[ix(k)]||'').trim():'';
+    return {id:g('id')||('p'+i),name:g('name'),category:g('category')||'منتجات',price:parseFloat(g('price'))||0,old:parseFloat(g('old_price'))||0,
+      sizes:g('sizes').split(/[،,|]/).map(s=>s.trim()).filter(Boolean),desc:g('description'),image:g('image'),available:!/^(لا|no|false|0|نفد)/i.test(g('available'))}}).filter(p=>p.name&&p.price>0)}
+function art(cat){const pot=/فخار/.test(cat),c1=pot?'#c9774e':'#2f7480',c2=pot?'#efd7bd':'#e8dcc3',d=document.createElement('div');d.style.cssText='width:100%;height:100%';
+  d.innerHTML=pot?'<svg viewBox="0 0 200 200" width="100%" height="100%"><rect width="200" height="200" fill="'+c2+'"/><path d="M78 40h44l-6 18c28 8 44 34 40 64-4 30-24 50-56 50s-52-20-56-50c-4-30 12-56 40-64z" fill="'+c1+'"/><path d="M62 112h76M60 134h80" stroke="#f7efe0" stroke-width="5" opacity=".7"/><path d="M80 40h40" stroke="#8f3f21" stroke-width="8" stroke-linecap="round"/></svg>'
+   :'<svg viewBox="0 0 200 200" width="100%" height="100%"><rect width="200" height="200" fill="'+c2+'"/><path d="M80 34l20 14 20-14 30 18 14 112H36L50 52z" fill="'+c1+'"/><path d="M100 48v116" stroke="#f7efe0" stroke-width="4" opacity=".6"/><circle cx="100" cy="76" r="4" fill="#f7efe0"/><circle cx="100" cy="94" r="4" fill="#f7efe0"/><circle cx="100" cy="112" r="4" fill="#f7efe0"/></svg>';return d}
+function pic(p){const w=el('div','pic');
+  if(p.image){const im=document.createElement('img');im.loading='lazy';im.alt=p.name;im.src=p.image;im.onerror=()=>{w.textContent='';w.appendChild(art(p.category))};w.appendChild(im)}else w.appendChild(art(p.category));return w}
+
+/* ============ الحالة ============ */
+let PRODUCTS=SAMPLE,CAT='الكل',Q='',CART=[];
+try{CART=JSON.parse(localStorage.getItem('cart')||'[]')}catch(e){CART=[]}
+const save=()=>{try{localStorage.setItem('cart',JSON.stringify(CART))}catch(e){}};
+const byId=id=>PRODUCTS.find(p=>p.id===id);
+function init(){
+  document.title=CONFIG.STORE_NAME+' | فخار وجلابيات مصرية أصيلة';$('brandName').textContent=CONFIG.STORE_NAME;$('footName').textContent=CONFIG.STORE_NAME;$('tagline').textContent=CONFIG.TAGLINE;
+  if(CONFIG.ABOUT)$('aboutText').textContent=CONFIG.ABOUT;
+  CONFIG.POLICY.forEach(t=>$('policyList').appendChild(el('li','',t)));
+  const L=$('links');const wa=document.createElement('a');wa.href=waUrl('أهلاً، عندي استفسار');wa.target='_blank';wa.rel='noopener';wa.textContent='واتساب';L.appendChild(wa);
+  [['Instagram',CONFIG.INSTAGRAM],['Facebook',CONFIG.FACEBOOK]].forEach(x=>{if(x[1]){const a=document.createElement('a');a.href=x[1];a.target='_blank';a.rel='noopener';a.textContent=x[0];L.appendChild(a)}});
+  $('q').oninput=e=>{Q=e.target.value.trim();render()};
+  $('cartBtn').onclick=openCart;$('closeCart').onclick=closeAll;$('ov').onclick=closeAll;$('modal').onclick=e=>{if(e.target===$('modal'))closeAll()};
+  CART=CART.filter(x=>true);render();cartCount();
+  if(CONFIG.SHEET_CSV_URL){fetch(CONFIG.SHEET_CSV_URL).then(r=>{if(!r.ok)throw 0;return r.text()}).then(t=>{const p=toProducts(parseCsv(t));if(p.length){PRODUCTS=p;CAT='الكل';render();renderCart()}}).catch(()=>{})}
+}
+function waUrl(text){let d=String(CONFIG.WHATSAPP).replace(/\D/g,'');if(d.startsWith('00'))d=d.slice(2);else if(d.startsWith('0'))d='20'+d.slice(1);return 'https://wa.me/'+d+'?text='+encodeURIComponent(text)}
+
+/* ============ المنتجات ============ */
+function render(){
+  const cats=['الكل'].concat(Array.from(new Set(PRODUCTS.map(p=>p.category))));const tb=$('tabs');tb.textContent='';
+  cats.forEach(c=>{const b=el('button','tab'+(c===CAT?' on':''),c);b.onclick=()=>{CAT=c;render()};tb.appendChild(b)});
+  const g=$('grid');g.textContent='';const n=Q.toLowerCase();
+  const L=PRODUCTS.filter(p=>(CAT==='الكل'||p.category===CAT)&&(!n||(p.name+' '+p.desc+' '+p.category).toLowerCase().includes(n)));
+  if(!L.length){g.appendChild(el('div','empty','مفيش منتجات مطابقة.'));return}
+  L.forEach(p=>{const c=el('div','card'),pc=pic(p);c.onclick=()=>openProduct(p.id);
+    if(!p.available)pc.appendChild(el('span','tag out','نفدت'));else if(p.old>p.price)pc.appendChild(el('span','tag','خصم '+Math.round((1-p.price/p.old)*100)+'%'));
+    c.appendChild(pc);const i=el('div','info');i.appendChild(el('div','cat',p.category));i.appendChild(el('h3','',p.name));
+    const pr=el('div','price',fmt(p.price));if(p.old>p.price)pr.appendChild(el('s','',fmt(p.old)));i.appendChild(pr);
+    const b=el('button','add',p.available?(p.sizes.length?'اختار المقاس':'أضف للسلة'):'نفدت');b.disabled=!p.available;
+    b.onclick=e=>{e.stopPropagation();p.sizes.length?openProduct(p.id):addToCart(p.id,'',1)};i.appendChild(b);c.appendChild(i);g.appendChild(c)})
+}
+function openProduct(id){
+  const p=byId(id);if(!p)return;const box=$('mbox');box.textContent='';let size='',qty=1;box.appendChild(pic(p));
+  const b=el('div','mb');b.appendChild(el('div','cat',p.category));b.appendChild(el('h2','',p.name));b.firstChild.nextSibling.style.fontSize='22px';
+  const pr=el('div','price',fmt(p.price));if(p.old>p.price)pr.appendChild(el('s','',fmt(p.old)));b.appendChild(pr);
+  if(p.desc)b.appendChild(el('p','',p.desc));
+  if(p.sizes.length){b.appendChild(el('div','note','المقاس:'));const s=el('div','sizes');p.sizes.forEach(z=>{const x=el('button','sz',z);x.onclick=()=>{size=z;[].forEach.call(s.children,y=>y.classList.toggle('on',y===x))};s.appendChild(x)});b.appendChild(s)}
+  const q=el('div','qty');const m=el('button','','−'),n=el('b','','1'),pl=el('button','','+');m.onclick=()=>{qty=Math.max(1,qty-1);n.textContent=qty};pl.onclick=()=>{qty=Math.min(20,qty+1);n.textContent=qty};q.appendChild(m);q.appendChild(n);q.appendChild(pl);b.appendChild(q);
+  const err=el('div','err');b.appendChild(err);
+  const a=el('button','wa',p.available?'أضف للسلة':'نفدت');a.disabled=!p.available;a.style.background='var(--teal)';a.onclick=()=>{if(p.sizes.length&&!size){err.textContent='اختار المقاس الأول.';return}addToCart(p.id,size,qty);closeAll()};b.appendChild(a);
+  const x=el('button','note','إغلاق');x.onclick=closeAll;b.appendChild(x);box.appendChild(b);$('modal').classList.add('show');document.body.style.overflow='hidden'}
+function closeAll(){$('modal').classList.remove('show');$('drawer').classList.remove('show');$('ov').classList.remove('show');document.body.style.overflow=''}
+
+/* ============ السلة ============ */
+function addToCart(id,size,qty){const f=CART.find(x=>x.id===id&&x.size===size);if(f)f.qty=Math.min(20,f.qty+qty);else CART.push({id:id,size:size,qty:qty});save();cartCount();renderCart();toast('اتضاف للسلة ✓')}
+function cartCount(){$('cartCount').textContent=CART.reduce((a,x)=>a+x.qty,0)}
+function lines(){return CART.map(x=>({x:x,p:byId(x.id)})).filter(l=>l.p)}
+function subtotal(){return lines().reduce((a,l)=>a+l.p.price*l.x.qty,0)}
+function shipping(gov,sub){if(CONFIG.FREE_SHIPPING_OVER&&sub>=CONFIG.FREE_SHIPPING_OVER)return 0;const g=CONFIG.SHIPPING_BY_GOV&&CONFIG.SHIPPING_BY_GOV[gov];return g!=null?g:CONFIG.SHIPPING_FEE}
+function openCart(){renderCart();$('drawer').classList.add('show');$('ov').classList.add('show');document.body.style.overflow='hidden'}
+let F={name:'',phone:'',gov:'',addr:'',pay:CONFIG.PAYMENTS[0],note:''};
+function renderCart(){
+  const body=$('cartBody');body.textContent='';const L=lines();
+  if(!L.length){body.appendChild(el('div','empty','السلة فاضية. ضيف منتجات وارجع.'));return}
+  L.forEach(l=>{const it=el('div','item');it.appendChild(pic(l.p));const d=el('div');d.appendChild(el('b','',l.p.name));if(l.x.size)d.appendChild(el('div','note','المقاس: '+l.x.size));
+    const q=el('div','qty'),m=el('button','','−'),n=el('b','',l.x.qty),pl=el('button','','+');
+    m.onclick=()=>{l.x.qty--;if(l.x.qty<1)CART.splice(CART.indexOf(l.x),1);save();cartCount();renderCart()};pl.onclick=()=>{l.x.qty=Math.min(20,l.x.qty+1);save();cartCount();renderCart()};q.appendChild(m);q.appendChild(n);q.appendChild(pl);d.appendChild(q);it.appendChild(d);
+    const r=el('div');r.style.textAlign='left';r.appendChild(el('div','price',fmt(l.p.price*l.x.qty)));const rm=el('button','rm','حذف');rm.onclick=()=>{CART.splice(CART.indexOf(l.x),1);save();cartCount();renderCart()};r.appendChild(rm);it.appendChild(r);body.appendChild(it)});
+  const sum=el('div','sum');body.appendChild(sum);
+  const form=el('div','form');body.appendChild(form);
+  const inp=(k,ph,t)=>{const i=el(t==='area'?'textarea':'input');if(t&&t!=='area')i.type=t;i.placeholder=ph;i.value=F[k];if(t==='area')i.rows=2;i.oninput=()=>{F[k]=i.value};form.appendChild(i);return i};
+  inp('name','الاسم بالكامل');const ph=inp('phone','رقم الموبايل','tel');ph.dir='ltr';
+  const gs=el('select');[['','اختار المحافظة']].concat(GOVS.map(g=>[g,g])).forEach(o=>{const op=el('option','',o[1]);op.value=o[0];gs.appendChild(op)});gs.value=F.gov;gs.onchange=()=>{F.gov=gs.value;upd()};form.appendChild(gs);
+  inp('addr','العنوان بالتفصيل (الشارع، المنطقة، علامة مميزة)','area');
+  const ps=el('select');CONFIG.PAYMENTS.forEach(x=>{const op=el('option','',x);op.value=x;ps.appendChild(op)});ps.value=F.pay;ps.onchange=()=>{F.pay=ps.value};form.appendChild(ps);
+  inp('note','ملاحظات (اختياري)','area');
+  const err=el('div','err');form.appendChild(err);
+  const go=el('button','wa','📲 اطلب عن طريق واتساب');form.appendChild(go);form.appendChild(el('div','note','هتتفتحلك رسالة واتساب جاهزة بالطلب، اضغط إرسال وهنأكد معاك.'));
+  const clr=el('button','rm','فضّي السلة');clr.onclick=()=>{CART=[];save();cartCount();renderCart()};form.appendChild(clr);
+  function upd(){const s=subtotal(),sh=shipping(F.gov,s);sum.textContent='';
+    [['إجمالي المنتجات',fmt(s)],['الشحن',(CONFIG.SHIPPING_FEE||CONFIG.SHIPPING_BY_GOV&&F.gov&&CONFIG.SHIPPING_BY_GOV[F.gov]!=null)?(sh===0?'مجاني':fmt(sh)):'هنأكده على واتساب']].forEach(r=>{const d=el('div');d.appendChild(el('span','',r[0]));d.appendChild(el('span','',r[1]));sum.appendChild(d)});
+    const t=el('div','t');t.appendChild(el('span','','الإجمالي'));t.appendChild(el('span','',fmt(s+(sh||0))));sum.appendChild(t)}
+  upd();
+  go.onclick=()=>{
+    const ph2=F.phone.replace(/\D/g,'');err.textContent='';
+    if(F.name.trim().length<3){err.textContent='اكتب اسمك بالكامل.';return}if(ph2.length<10){err.textContent='اكتب رقم موبايل صحيح.';return}
+    if(!F.gov){err.textContent='اختار المحافظة.';return}if(F.addr.trim().length<8){err.textContent='اكتب العنوان بالتفصيل.';return}
+    const s=subtotal(),sh=shipping(F.gov,s),hasShip=CONFIG.SHIPPING_FEE||(CONFIG.SHIPPING_BY_GOV&&CONFIG.SHIPPING_BY_GOV[F.gov]!=null);
+    const msg=['*طلب جديد - '+CONFIG.STORE_NAME+'*','','الاسم: '+F.name.trim(),'الموبايل: '+ph2,'المحافظة: '+F.gov,'العنوان: '+F.addr.trim(),'','*الطلبات:*']
+      .concat(lines().map((l,i)=>(i+1)+') '+l.p.name+(l.x.size?' (مقاس '+l.x.size+')':'')+' × '+l.x.qty+' = '+fmt(l.p.price*l.x.qty)))
+      .concat(['','إجمالي المنتجات: '+fmt(s),'الشحن: '+(hasShip?(sh===0?'مجاني':fmt(sh)):'هيتأكد على واتساب'),'*الإجمالي: '+fmt(s+(hasShip?sh:0))+(hasShip?'':' + الشحن')+'*','','طريقة الدفع: '+F.pay]).concat(F.note.trim()?['','ملاحظات: '+F.note.trim()]:[]);
+    window.open(waUrl(msg.join('\n')),'_blank');toast('اتفتح واتساب، ابعت الرسالة عشان الطلب يتأكد')}
+}
+init();
+</script>
+</body>
+</html>
